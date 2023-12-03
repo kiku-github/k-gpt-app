@@ -1,0 +1,14 @@
+@use '../fundation/breakpoints' as bre;
+@use '../fundation/variables' as var;
+
+.l-inner {
+    max-width: 1200px;
+    padding: 2rem;
+    box-sizing: border-box;
+    &.--w100 {
+        max-width: unset;
+    }
+    &.--center {
+        margin: 0 auto;
+    }
+}

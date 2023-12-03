@@ -1,0 +1,21 @@
+/*========================================
+break point
+========================================*/
+$desktop: 1200px;
+$ipro: 1024px;
+$sp: 600px;
+@mixin desktop {
+    @media (max-width: ($desktop)) {
+        @content;
+    }
+}
+@mixin ipro {
+    @media (max-width: ($ipro)) {
+        @content;
+    }
+}
+@mixin sp {
+    @media (max-width: ($sp)) {
+      @content;
+    }
+}

@@ -1,0 +1,18 @@
+@use '../fundation/_variables.scss' as var;
+@use '../fundation/_breakpoints.scss' as bre;
+
+* {
+    word-break: normal;
+    word-wrap: break-word;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    width: 100%;
+    font-family: var.$fontNoto;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}

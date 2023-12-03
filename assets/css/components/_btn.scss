@@ -1,0 +1,144 @@
+@use '../fundation/breakpoints' as bre;
+@use '../fundation/variables' as var;
+
+.c-adminBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 0.5rem 1.25rem;
+    background-color: $colorBg;
+    border: 1px solid $colorTxt;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $colorTxt;
+    line-height: 1;
+    transition: .3s;
+
+    &:hover {
+        opacity: .7;
+
+        @media (max-width: ($ipro)) {
+            opacity: 1;
+        }
+    }
+
+    &__img {
+        width: 15px;
+    }
+
+    &Wrap {
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    &Add {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding: 0.5rem 4.5rem;
+        background-color: $colorBtn;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        color: #fff;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            opacity: .7;
+
+            @media (max-width: ($ipro)) {
+                opacity: 1;
+            }
+        }
+    }
+
+    &Back {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding: 0.5rem 2.5rem;
+        background-color: $colorGray;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        color: #fff;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            opacity: .7;
+
+            @media (max-width: ($ipro)) {
+                opacity: 1;
+            }
+        }
+    }
+
+    &Cancel {
+        padding: .3rem 1rem;
+        border: 1.5px solid rgb(112, 112, 112);
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            background: rgb(112, 112, 112);
+            color: #fff;
+
+            @media (max-width: ($ipro)) {
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+
+    &Generate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: auto;
+        padding: 0.5rem 2.5rem;
+        background-image: linear-gradient(to right, rgb(234, 0, 255), rgb(0, 153, 255));
+        border-radius: 5px;
+        font-size: 1.4rem;
+        color: #fff;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            opacity: .7;
+
+            @media (max-width: ($ipro)) {
+                opacity: 1;
+            }
+        }
+    }
+
+    &Delete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding: 0.5rem 4.5rem;
+        background-color: rgb(240, 0, 0);
+        border-radius: 5px;
+        font-size: 1.4rem;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: .7;
+
+            @media (max-width: ($ipro)) {
+                opacity: 1;
+            }
+        }
+    }
+}

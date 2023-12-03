@@ -1,0 +1,20 @@
+@use '../fundation/breakpoints' as bre;
+@use '../fundation/variables' as var;
+
+.c-adminTtl {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem 2rem 1rem;
+    border-bottom: 1px solid $colorGray;
+    box-sizing: border-box;
+
+    @media (max-width: ($ipro)) {
+        padding: 2rem 2rem 1rem;
+    }
+
+    &__txt {
+        font-size: 2rem;
+    }
+}

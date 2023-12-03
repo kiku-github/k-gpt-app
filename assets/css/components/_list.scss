@@ -1,0 +1,112 @@
+@use '../fundation/breakpoints' as bre;
+@use '../fundation/variables' as var;
+
+.c-adminList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-width: 1200px;
+    padding: 1.3rem 1rem;
+    background: $colorMain;
+    border-top: 1px solid $colorSub;
+    border-bottom: 1px solid $colorSub;
+    text-align: center;
+
+    &.--content {
+        @extend .c-adminList;
+        background: unset;
+        border-top: unset;
+        border-bottom: 1px solid $colorGray;
+    }
+
+    &__item {
+        width: 100%;
+        min-width: 150px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $colorSub;
+
+        &.--content {
+            @extend .c-adminList__item;
+            font-weight: 400;
+            color: #000;
+        }
+
+        &.--min {
+            max-width: 100px;
+            min-width: unset;
+        }
+
+        &.--middle {
+            max-width: 150px;
+        }
+
+        &.--ttl {
+            width: 70%;
+        }
+
+        &.--img {
+            width: 150px;
+            height: 100px;
+        }
+
+        &.--txt {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            text-align: initial;
+            overflow: hidden;
+        }
+
+        & img {
+            max-width: 150px;
+            height: 100px;
+            object-fit: cover;
+            aspect-ratio: 2 / 3;
+        }
+
+        & .release {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #7fc1de;
+            border-radius: 20px;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        & .private {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #fd8a8a;
+            border-radius: 20px;
+            color: #fff;
+            box-sizing: border-box;
+        }
+    }
+
+    &__img {
+        height: 100px;
+        background: $colorGray;
+    }
+
+    &__link {
+        border-bottom: 1px solid $colorBtn;
+        color: $colorBtn;
+        transition: .3s;
+
+        &:hover {
+            opacity: .7;
+
+            @media (max-width: ($ipro)) {
+                opacity: 1;
+            }
+        }
+    }
+
+    &Wrap {
+        position: relative;
+        padding: 1rem 0;
+        overflow: auto;
+    }
+}
